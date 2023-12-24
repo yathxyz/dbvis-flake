@@ -9,6 +9,6 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
   {
-    packages.${system}.default = pkgs.callPackage ./dbvis { inherit pkgs; inherit system; };
+    packages.${system}.default = pkgs.callPackage ./dbvis { inherit pkgs; };
   };
 }
